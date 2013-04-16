@@ -1,94 +1,133 @@
 extends layout
 
 block content
-  div.header
-    h1 function Taylor_Fondren() {
+  #code
+    div.header
+      p
+        span.keyword function 
+        span.identifier Taylor_Fondren
+        span.text () {
 
-  div.section
-    h2 var Education = [
+    div.section
+      p
+        span.keyword var 
+        span.identifier education 
+        span.text = [
 
-    div.item
-      h3 'Bachelor of Science in Computer Science, 2008',
-      p.subheading 'North Carolina State University &mdash; Raleigh, NC'
+      div.item
+        p
+          span.text { 
+          span.string 'BS in Computer Science, 2008' 
+          span.text => 
+          span.string 'North Carolina State University &mdash; Raleigh, NC' 
+          span.text }
 
-    h2 ];
+      p
+        span.text ];
 
-  div.section
-    h2 var Work_Experience = [
+    div.section
+      p
+        span.keyword var 
+        span.identifier Work_Experience 
+        span.text = [
 
-    div.item
-      h3 { 'Public Consulting Group &mdash; Blacksburg, VA' => 
-      p.subheading [ 'Software Engineer (December 2011 &ndash; Present)',
-      p.subjeading 'Present Employment' ]
+      p
+        span.text { 
+      div.item
+        p
+          span.string 'Public Consulting Group &mdash; Blacksburg, VA' 
+          span.text => 
+        div.subitem
+          p
+            span.text [ 
+            span.string 'Software Engineer (December 2011 &ndash; Present)'
+            span.text , 
+          p
+            span.string 'Present Employment' 
+            span.text ]
+        p
+          span.text , 
 
-      h3 },
+      div.item
+        p
+          span.string 'McMillion Research &mdash; Charleston, WV' 
+          span.text => 
+        div.subitem
+          p
+            span.text [ 
+          p
+            span.string 'Web Developer (August 2010 &ndash; November 2011)' 
+            span.text , 
+          p
+            span.string 'Worked on multiple projects independently and concurrently'
+            span.text , 
+          p
+            span.string.
+              'Used HTML, Javascript, and Perl scripting to develop web-based surveys
+              to collect data for market research applications'
+            span.text , 
+          p
+            span.string.
+              'Worked with clients directly throughout the lifetime of a project,
+              including determining client needs, developing specifications, and
+              providing continuing support'
+            span.text , 
+          p
+            span.string.
+              'Independently developed mobile applications for the iOS and Android
+              platforms, including front-end design, running beta tests, and writing
+              internal documentation'
+          p
+            span.text ], 
 
-    div.item
-      h3 McMillion Research &mdash; Charleston, WV
-      p.subheading Web Developer (August 2010 &ndash; November 2011)
-      ul.details
-        li.
-           Worked on multiple projects independently and concurrently
-        li.
-           Used HTML, Javascript, and Perl scripting to develop web-based surveys
-           to collect data for market research applications
-        li.
-           Worked with clients directly throughout the lifetime of a project,
-           including determining client needs, developing specifications, and
-           providing continuing support
-        li.
-           Independently developed mobile applications for the iOS and Android
-           platforms, including front-end design, running beta tests, and writing
-           internal documentation
+      div.item
+        p
+          h3 Hopt Solutions &mdash; Durham, NC
+          p.subheading Web Developer (December 2008 &ndash; February 2010)
+          li.
+             Developed and maintained multiple websites concurrently, including
+             e-commerce sites
+          li.
+             Developed site layouts, including graphics and images, using PHP, XHTML,
+             JavaScript, and CSS
+          li.
+             Extended the concrete5 PHP framework to provide customized CMS solutions
+             for clients
+          li.
+             Heavily extended the Magento e-commerce platform to add custom front-
+             and back-end  functionality for clients
 
-    div.item
-      h3 Hopt Solutions &mdash; Durham, NC
-      p.subheading Web Developer (December 2008 &ndash; February 2010)
-      ul.details
-        li.
-           Developed and maintained multiple websites concurrently, including
-           e-commerce sites
-        li.
-           Developed site layouts, including graphics and images, using PHP, XHTML,
-           JavaScript, and CSS
-        li.
-           Extended the concrete5 PHP framework to provide customized CMS solutions
-           for clients
-        li.
-           Heavily extended the Magento e-commerce platform to add custom front-
-           and back-end  functionality for clients
+      div.item
+        p
+          h3 Tax Technology Services, LLC &mdash; Raleigh, NC
+          p.subheading Web Developer Internship (May 2008 &ndash; October 2008)
+          li.
+             Worked in a small team to develop and maintain an enterprise-level web
+             application
+          li.
+             Developed a data entry application for in-house and possible client use,
+             greatly improving the efficiency and turnover rate of in-house data
+             entry
+          li.
+             Administered in-house usability and QA testing for data entry
+             application, addressing bug fixes and user input as required
 
-    div.item
-      h3 Tax Technology Services, LLC &mdash; Raleigh, NC
-      p.subheading Web Developer Internship (May 2008 &ndash; October 2008)
-      ul.details
-        li.
-           Worked in a small team to develop and maintain an enterprise-level web
-           application
-        li.
-           Developed a data entry application for in-house and possible client use,
-           greatly improving the efficiency and turnover rate of in-house data
-           entry
-        li.
-           Administered in-house usability and QA testing for data entry
-           application, addressing bug fixes and user input as required
+    div.section
+      h2 Achievements
 
-  div.section
-    h2 Achievements
+      div.item
+        h3 Park Scholar
+        p.subheading North Carolina State University
 
-    div.item
-      h3 Park Scholar
-      p.subheading North Carolina State University
-
-    div.item
-      h3 Co-author
-      p.subheading
-        span.italic
-          | A Development Environment for Distributed Synchronous Collaborative
-          | Programming.
-        |  Kristy Elizabeth Boyer, August A. Dwight, R. Taylor
-        | Fondren, Mladen A. Vouk, and James C. Lester. In 
-        span.underline
-          | Proceedings of the 13th Annual Conference on Innovation and Technology in
-          | Computer Science Education
-        |  (ITiCSE '08), Madrid, Spain, 2008, 158&ndash;162.
+      div.item
+        h3 Co-author
+        p.subheading
+          span.italic
+            | A Development Environment for Distributed Synchronous Collaborative
+            | Programming.
+            |  Kristy Elizabeth Boyer, August A. Dwight, R. Taylor
+            | Fondren, Mladen A. Vouk, and James C. Lester. In 
+          span.underline
+            | Proceedings of the 13th Annual Conference on Innovation and Technology in
+            | Computer Science Education
+            |  (ITiCSE '08), Madrid, Spain, 2008, 158&ndash;162.
