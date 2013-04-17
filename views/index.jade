@@ -1,133 +1,401 @@
 extends layout
 
 block content
-  #code
-    div.header
-      p
-        span.keyword function 
-        span.identifier Taylor_Fondren
-        span.text () {
-
-    div.section
-      p
-        span.keyword var 
-        span.identifier education 
-        span.text = [
-
-      div.item
+  #header
+  #container
+    #code.column
+      #bg-top-center
+      #headerComment
         p
-          span.text { 
-          span.string 'BS in Computer Science, 2008' 
-          span.text => 
-          span.string 'North Carolina State University &mdash; Raleigh, NC' 
-          span.text }
-
-      p
-        span.text ];
-
-    div.section
-      p
-        span.keyword var 
-        span.identifier Work_Experience 
-        span.text = [
-
-      p
-        span.text { 
-      div.item
+          span.comment /**
         p
-          span.string 'Public Consulting Group &mdash; Blacksburg, VA' 
-          span.text => 
-        div.subitem
+          span.comment &nbsp;* Resume.js
+        p
+          span.comment &nbsp;*
+        p
+          span.comment &nbsp;* @author: Taylor Fondren
+        p
+          span.comment &nbsp;* @location: Blacksburg, VA
+        p
+          span.comment &nbsp;* @contact: 
+            a(href='mailto:rtfondren@gmail.com') rtfondren@gmail.com
+        p
+          span.comment &nbsp;*/
+      #header
+        p
+          span.keyword var 
+          span.identifier Resume 
+          span.text = 
+          span.keyword function
+          span.text () {
+
+      div.section
+        p
+          span.keyword this.
+          span.identifier Education 
+          span.text = { 
+
+        div.item
           p
+            span.string 'BS in Computer Science, 2008' 
+            span.text => 
+          div.subitem
+            p
+              span.string 'North Carolina State University &mdash; Raleigh, NC' 
+        p
+          span.text };
+
+      div.section
+        p
+          span.keyword this.
+          span.identifier Work_Experience 
+          span.text = { 
+
+        div.item
+          p
+            span.string 'Public Consulting Group &mdash; Blacksburg, VA' 
+            span.text => 
             span.text [ 
-            span.string 'Software Engineer (December 2011 &ndash; Present)'
-            span.text , 
-          p
-            span.string 'Present Employment' 
-            span.text ]
-        p
-          span.text , 
+          div.subitem
+            p
+              span.string 'Software Engineer (December 2011 &ndash; Present)'
+              span.text , 
+            p
+              span.string 'Present Employment' 
+              span.text ], 
 
-      div.item
-        p
-          span.string 'McMillion Research &mdash; Charleston, WV' 
-          span.text => 
-        div.subitem
+        div.item
           p
+            span.string 'McMillion Research &mdash; Charleston, WV' 
+            span.text => 
             span.text [ 
-          p
-            span.string 'Web Developer (August 2010 &ndash; November 2011)' 
-            span.text , 
-          p
-            span.string 'Worked on multiple projects independently and concurrently'
-            span.text , 
-          p
-            span.string.
-              'Used HTML, Javascript, and Perl scripting to develop web-based surveys
-              to collect data for market research applications'
-            span.text , 
-          p
-            span.string.
-              'Worked with clients directly throughout the lifetime of a project,
-              including determining client needs, developing specifications, and
-              providing continuing support'
-            span.text , 
-          p
-            span.string.
-              'Independently developed mobile applications for the iOS and Android
-              platforms, including front-end design, running beta tests, and writing
-              internal documentation'
-          p
-            span.text ], 
+          div.subitem
+            p
+              span.string 'Web Developer (August 2010 &ndash; November 2011)'
+              span.text , 
+            p
+              span.string 'Worked on multiple projects independently and concurrently'
+              span.text , 
+            p
+              span.string.
+                'Used HTML, Javascript, and Perl scripting to develop web-based surveys
+                to collect data for market research applications'
+              span.text , 
+            p
+              span.string.
+                'Worked with clients directly throughout the lifetime of a project,
+                including determining client needs, developing specifications, and
+                providing continuing support'
+              span.text , 
+            p
+              span.string.
+                'Independently developed mobile applications for the iOS and Android
+                platforms, including front-end design, running beta tests, and writing
+                internal documentation' 
+              span.text ], 
 
-      div.item
+        div.item
+          p
+            span.string 'Hopt Solutions &mdash; Durham, NC' 
+            span.text => 
+            span.text [ 
+          div.subitem
+            p
+              span.string 'Web Developer (December 2008 &ndash; February 2010)'
+              span.text , 
+            p
+              span.string.
+               'Developed and maintained multiple websites concurrently, including
+               e-commerce sites'
+              span.text , 
+            p
+              span.string.
+               'Developed site layouts, including graphics and images, using PHP, XHTML,
+               JavaScript, and CSS'
+              span.text , 
+            p
+              span.string.
+               'Extended the concrete5 PHP framework to provide customized CMS solutions
+               for clients'
+              span.text , 
+            p
+              span.string
+               'Heavily extended the Magento e-commerce platform to add custom front-
+               and back-end  functionality for clients' 
+              span.text ], 
+
+        div.item
+          p
+            span.string 'Tax Technology Services, LLC &mdash; Raleigh, NC' 
+            span.text => 
+            span.text [ 
+          div.subitem
+            p
+              span.string 'Web Developer Internship (May 2008 &ndash; October 2008)'
+              span.text, 
+            p
+              span.string.
+               'Worked in a small team to develop and maintain an enterprise-level web
+               application'
+              span.text , 
+            p
+              span.string.
+               'Developed a data entry application for in-house and possible client use,
+               greatly improving the efficiency and turnover rate of in-house data
+               entry'
+              span.text, 
+            p
+              span.string.
+               'Administered in-house usability and QA testing for data entry
+               application, addressing bug fixes and user input as required' 
+              span.text ]
         p
-          h3 Hopt Solutions &mdash; Durham, NC
-          p.subheading Web Developer (December 2008 &ndash; February 2010)
-          li.
-             Developed and maintained multiple websites concurrently, including
-             e-commerce sites
-          li.
-             Developed site layouts, including graphics and images, using PHP, XHTML,
-             JavaScript, and CSS
-          li.
-             Extended the concrete5 PHP framework to provide customized CMS solutions
-             for clients
-          li.
-             Heavily extended the Magento e-commerce platform to add custom front-
-             and back-end  functionality for clients
+          span.text };
 
-      div.item
+      div.section
         p
-          h3 Tax Technology Services, LLC &mdash; Raleigh, NC
-          p.subheading Web Developer Internship (May 2008 &ndash; October 2008)
-          li.
-             Worked in a small team to develop and maintain an enterprise-level web
-             application
-          li.
-             Developed a data entry application for in-house and possible client use,
-             greatly improving the efficiency and turnover rate of in-house data
-             entry
-          li.
-             Administered in-house usability and QA testing for data entry
-             application, addressing bug fixes and user input as required
+          span.keyword this.
+          span.identifier Achievements 
+          span.text = { 
 
-    div.section
-      h2 Achievements
+        div.item
+          p
+            span.string 'Park Scholar' 
+            span.text => 
+          div.subitem
+            p
+              span.string 'North Carolina State University'
+              span.text ,
+        div.item
+          p
+            span.string 'Co-author' 
+            span.text => 
+          div.subitem
+            p
+              span.string '
+                span.italic
+                  | A Development Environment for Distributed Synchronous Collaborative
+                  | Programming.
+                |  Kristy Elizabeth Boyer, August A. Dwight, R. Taylor
+                | Fondren, Mladen A. Vouk, and James C. Lester. In 
+                span.underline
+                  | Proceedings of the 13th Annual Conference on Innovation and Technology in
+                  | Computer Science Education
+                |  (ITiCSE '08), Madrid, Spain, 2008, 158&ndash;162.'
+        p
+          span.text };
+      p
+        span.text };
+    #gutter.column
+      #bg-top-left
+      p
+        span.comment 1
+      p
+        span.comment 2
+      p
+        span.comment 3
+      p
+        span.comment 4
+      p
+        span.comment 5
+      p
+        span.comment 6
+      p
+        span.comment 7
+      p
+        span.comment 8
+      p
+        span.comment 9
+      p
+        span.comment 10
+      p
+        span.comment 11
+      p
+        span.comment 12
+      p
+        span.comment 13
+      p
+        span.comment 14
+      p
+        span.comment 15
+      p
+        span.comment 16
+      p
+        span.comment 17
+      p
+        span.comment 18
+      p
+        span.comment 19
+      p
+        span.comment 20
+      p
+        span.comment 21
+      p
+        span.comment 22
+      p
+        span.comment 23
+      p
+        span.comment 24
+      p
+        span.comment 25
+      p
+        span.comment 26
+      p
+        span.comment 27
+      p
+        span.comment 28
+      p
+        span.comment 29
+      p
+        span.comment 30
+      p
+        span.comment 31
+      p
+        span.comment 32
+      p
+        span.comment 33
+      p
+        span.comment 34
+      p
+        span.comment 35
+      p
+        span.comment 36
+      p
+        span.comment 37
+      p
+        span.comment 38
+      p
+        span.comment 39
+      p
+        span.comment 40
+      p
+        span.comment 41
+      p
+        span.comment 42
+      p
+        span.comment 43
+      p
+        span.comment 44
+      p
+        span.comment 45
+      p
+        span.comment 46
+      p
+        span.comment 47
+      p
+        span.comment 48
+      p
+        span.comment 49
+      p
+        span.comment 50
+      p
+        span.comment 51
+      p
+        span.comment 52
+      p
+        span.comment 53
+      p
+        span.comment 54
+      p
+        span.comment 55
+      p
+        span.comment 56
+      p
+        span.comment 57
+      p
+        span.comment 58
+      p
+        span.comment 59
+      p
+        span.comment 60
+      p
+        span.comment 61
+      p
+        span.comment 62
+      p
+        span.comment 63
+      p
+        span.comment 64
+      p
+        span.comment 65
+      p
+        span.comment 66
+      p
+        span.comment 67
+      p
+        span.comment 68
+      p
+        span.comment 69
+      p
+        span.comment 70
+      p
+        span.comment 71
+      p
+        span.comment 72
+      p
+        span.comment 73
+      p
+        span.comment 74
+      p
+        span.comment 75
+      p
+        span.comment 76
+      p
+        span.comment 77
+      p
+        span.comment 78
+      p
+        span.comment 79
+      p
+        span.comment 80
+      p
+        span.comment 81
+      p
+        span.comment 82
+      p
+        span.comment 83
+      p
+        span.comment 84
+      p
+        span.comment 85
+      p
+        span.comment 86
+      p
+        span.comment 87
+      p
+        span.comment 88
+      p
+        span.comment 89
+      p
+        span.comment 90
+      p
+        span.comment 91
+      p
+        span.comment 92
+      p
+        span.comment 93
+      p
+        span.comment 94
+      p
+        span.comment 95
+      p
+        span.comment 96
+      p
+        span.comment 97
+      p
+        span.comment 98
+      p
+        span.comment 99
 
-      div.item
-        h3 Park Scholar
-        p.subheading North Carolina State University
-
-      div.item
-        h3 Co-author
-        p.subheading
-          span.italic
-            | A Development Environment for Distributed Synchronous Collaborative
-            | Programming.
-            |  Kristy Elizabeth Boyer, August A. Dwight, R. Taylor
-            | Fondren, Mladen A. Vouk, and James C. Lester. In 
-          span.underline
-            | Proceedings of the 13th Annual Conference on Innovation and Technology in
-            | Computer Science Education
-            |  (ITiCSE '08), Madrid, Spain, 2008, 158&ndash;162.
+    #empty.column
+      #bg-top-right
+  #footer-wrapper
+    #footer
+      p#statusbar resume.js
+      p
+        span.comment &copy; 2012 Taylor Fondren
+      p 
+        span.comment Color scheme is 
+        span.comment
+          a(href='http://ethanschoonover.com/solarized') Solarized
+        span.comment  by Ethan Schoonover
