@@ -1,0 +1,97 @@
+* html body
+  overflow: hidden
+
+body
+  font 16px/1.25 'Helvetica Neue', 'Lucida Grande', 'Arial'
+  text-stroke 1px rgba(255, 255, 255, 0.1)
+  color #555
+
+div
+  margin: 0px
+  border: 0px
+  padding: 0;x
+
+#content-wrapper
+  margin: 0px auto
+
+#container
+  padding-left: 2.5em
+  padding-right: 1.25em
+  overflow: hidden
+
+#container .column
+  position: relative
+  float: left
+  padding-bottom: 20000px;  /* X + padding-bottom */
+  margin-bottom: -20000px;  /* X */
+
+#center
+  width: 100%
+  background-color: #0F0
+
+/*** IE6 Fix ***/
+* html #left
+  left: 150px           /* RC width */
+
+#left
+  background-color: #F00
+  width: 1.25em
+  padding: 0px .625em
+  right: 2.5em
+  margin-left: -100%
+  text-align: right
+
+
+#right
+  width: 1.25em
+  margin-right: -1.25em
+  background-color: #00F
+
+* html #footer-wrapper
+  float: left
+  position: relative
+  width: 100%
+  padding-bottom: 10000px
+  margin-bottom: -10000px
+  background-color: #A0A
+  overflow: hidden
+
+#footer
+  clear: both
+  position: relative
+  background-color: #F0F
+
+h1, h2
+  margin 0
+  font-size 22px
+  color #343434
+h1
+  text-shadow 1px 2px 2px #ddd
+  font-size 60px
+#articles
+  text-align left
+  margin-left auto
+  margin-right auto
+  width 320px
+  .article
+    margin 20px
+    .created_at
+      display none
+    .title
+      font-weight bold
+      text-decoration underline
+      background-color #eee
+    .body
+      background-color #ffa
+.article
+  .created_at
+    display none
+  input[type=text]
+    width 490px
+    margin-left 16px
+  input[type=button], input[type=submit]
+    text-align left
+    margin-left 440px
+  textarea
+    width 490px
+    height 90px

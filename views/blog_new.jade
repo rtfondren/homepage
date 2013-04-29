@@ -1,0 +1,16 @@
+extends layoutBlog
+
+block content
+  h1= title
+  if message
+    #message= message
+  form(method="post")
+    div
+      div
+        span Title :
+        input(type="text", name="title", id="editArticleTitle")
+      div
+        span Body :
+        textarea(name="body", rows=20, id="editArticleBody")
+      #editArticleSubmit
+        input(type="submit", name="submit", value="Send")
