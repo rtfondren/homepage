@@ -1,0 +1,18 @@
+extends layoutBlog
+
+block content
+  #header
+    h1= title
+  #container
+    #center.column
+      #articles
+        each article in articles
+          .article
+            .created_at= article.created_at
+            .title
+              a(href='/blog/' + article._id.toHexString())!= article.title
+            .body= article.body
+    #left.column
+    #right.column
+  #footer-wrapper
+    #footer
